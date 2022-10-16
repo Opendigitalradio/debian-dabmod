@@ -1,0 +1,42 @@
+Source: odr-dabmod
+Section: hamradio
+Priority: optional
+Maintainer: Robin ALEXANDER <robin.alexander@netplus.ch>
+Build-Depends:	debhelper-compat (= 13),
+		libbladerf-dev,
+		libboost-dev,
+		libboost-thread-dev,
+		libcurl4-openssl-dev,
+		libfftw3-dev,
+		liblimesuite-dev,
+		libsoapysdr-dev,
+		libuhd-dev,
+		libzmq3-dev,
+                pkg-config
+Standards-Version: 4.6.0.1
+Homepage: https://www.opendigitalradio.org/mmbtools
+Vcs-Browser: https://salsa.debian.org/ralex/odr-dabmod
+Vcs-Git: https://salsa.debian.org/ralex/odr-dabmod.git
+
+
+Package: odr-dabmod
+Architecture: any
+Multi-Arch: foreign
+Depends:	${misc:Depends},
+		${shlibs:Depends},
+		libbladerf2,
+		libcurl4,
+		libfftw3-3,
+		liblimesuite20.10-1,
+		libsoapysdr0.7,
+		libuhd3.15.0,
+		libzmq5
+Description: DAB modulator compliant to ETSI EN 300 401
+ ODR-DabMod is the Digital Audio Broadcast (DAB) OFDM
+ modulator compliant to ETSI EN 300 401.
+ .
+ ODR-DabMod takes an Ensemble Transport Interface (ETI)
+ stream as input and outputs a complex baseband stream of
+ interlaced I/Q samples with a default sampling frequency
+ of 2.048MHz. It can also directly drive SDR devices
+ through Ettus' UHD driver, SoapySDR and LimeSuite.

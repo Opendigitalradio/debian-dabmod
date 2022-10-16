@@ -1,0 +1,599 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: odr-dabmod
+Upstream-Contact: Matthias P. Braendli <matthias@mpb.li>
+Source: https://github.com/Opendigitalradio/ODR-DabMux
+
+Files:     debian/*
+Copyright: 2022 Robin Alexander <robin.alexander@netplus.ch>
+License:   GPL-3.0+
+
+Files:     python/gui/templates/*
+Copyright: 2018, 2019 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     .gitignore
+           .travis.yml
+           AUTHORS
+           INSTALL.md
+           NEWS
+           README.md
+           TODO
+           bootstrap.sh
+           ChangeLog
+           doc/README-Fileinput
+           doc/README-RC.md
+           doc/README-SFN.md
+           doc/easydabv3.ini
+           doc/example.ini
+           doc/fir-filter/README
+           doc/fir-filter/filtertaps.txt
+           doc/fir-filter/simplefiltertaps.txt
+           doc/stats_dabmod_munin.py
+           doc/zmq-ctrl/cpp/test/CMakeLists.txt
+           doc/zmq-ctrl/cpp/test/README
+           doc/zmq-ctrl/zmq_remote.py
+           lib/edi/README.md
+           lib/fec/README.md
+           lib/fec/decode_rs.h
+           lib/fec/encode_rs.h
+           man/odr-dabmod.1
+           python/README.md
+           python/dpd.ini
+           python/dpd/Adapt.py
+           python/dpd/Measure.py
+           python/dpd/Model_Lut.py
+           python/dpd/Model_Poly.py
+           python/dpd/Symbol_align.py
+           python/dpd/__init__.py
+           python/dpd/img/setup_diagram.svg
+           python/dpd/img/setup_photo.svg
+           python/dpd/img/shoulder_measurement_after.png
+           python/dpd/img/shoulder_measurement_before.png
+           python/dpd/old/show_spectrum.py
+           python/gui-dpdce.ini
+           python/gui/__init__.py
+           python/gui/logs/.keep
+           python/gui/static/css/jquery.gritter.css
+           python/gui/static/css/odr.css
+           python/gui/static/dpd/index.txt
+           python/gui/static/fonts/accept.png
+           python/gui/static/fonts/favicon.ico
+           python/gui/static/fonts/glyphicons-halflings-regular.eot
+           python/gui/static/fonts/glyphicons-halflings-regular.svg
+           python/gui/static/fonts/glyphicons-halflings-regular.ttf
+           python/gui/static/fonts/glyphicons-halflings-regular.woff
+           python/gui/static/fonts/glyphicons-halflings-regular.woff2
+           python/gui/static/fonts/gritter-light.png
+           python/gui/static/fonts/gritter.png
+           python/gui/static/fonts/ie-spacer.gif
+           python/gui/static/fonts/warning.png
+           python/gui/templates/body-nav.html
+           python/lib/__init__.py
+           python/poly.coef
+           src/testremotecontrol/Makefile
+           src/testremotecontrol/README
+           src/testremotecontrol/test.cpp
+Copyright: 2014-2020 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     Makefile.am
+           src/BlockPartitioner.cpp
+           src/BlockPartitioner.h
+           src/Buffer.cpp
+           src/Buffer.h
+           src/ConfigParser.cpp
+           src/ConfigParser.h
+           src/DabMod.cpp
+           src/DabModulator.cpp
+           src/DabModulator.h
+           src/EtiReader.cpp
+           src/EtiReader.h
+           src/FIRFilter.h
+           src/FicSource.cpp
+           src/FicSource.h
+           src/Flowgraph.cpp
+           src/Flowgraph.h
+           src/FrameMultiplexer.cpp
+           src/FrameMultiplexer.h
+           src/GainControl.cpp
+           src/GainControl.h
+           src/GuardIntervalInserter.cpp
+           src/GuardIntervalInserter.h
+           src/InputZeroMQReader.cpp
+           src/MemlessPoly.h
+           src/ModPlugin.cpp
+           src/ModPlugin.h
+           src/NullSymbol.cpp
+           src/NullSymbol.h
+           src/OfdmGenerator.cpp
+           src/OfdmGenerator.h
+           src/OutputFile.cpp
+           src/OutputFile.h
+           src/OutputMemory.cpp
+           src/OutputMemory.h
+           src/OutputZeroMQ.cpp
+           src/OutputZeroMQ.h
+           src/PAPRStats.cpp
+           src/PAPRStats.h
+           src/PhaseReference.cpp
+           src/PhaseReference.h
+           src/PrbsGenerator.h
+           src/PuncturingEncoder.cpp
+           src/PuncturingEncoder.h
+           src/Resampler.cpp
+           src/Resampler.h
+           src/SubchannelSource.cpp
+           src/SubchannelSource.h
+           src/TII.cpp
+           src/TimestampDecoder.cpp
+           src/TimestampDecoder.h
+           src/Utils.cpp
+           src/Utils.h
+           src/output/BladeRF.cpp
+           src/output/SDR.cpp
+           src/output/UHD.cpp
+Copyright: 2005-2206 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2014-2020 Matthias P. Braendli, matthias.braendli@mpb.li
+           2021 Steven Rossel, steven.rossel@bluewin.ch
+License:   GPL-3.0+
+
+Files:     configure.ac
+           src/CicEqualizer.cpp
+           src/CicEqualizer.h
+           src/ConvEncoder.cpp
+           src/ConvEncoder.h
+           src/DifferentialModulator.cpp
+           src/DifferentialModulator.h
+           src/Eti.cpp
+           src/FrequencyInterleaver.cpp
+           src/FrequencyInterleaver.h
+           src/InputMemory.cpp
+           src/InputMemory.h
+           src/PcDebug.h
+           src/PrbsGenerator.cpp
+           src/PuncturingRule.cpp
+           src/PuncturingRule.h
+           src/QpskSymbolMapper.cpp
+           src/QpskSymbolMapper.h
+           src/SignalMultiplexer.cpp
+           src/SignalMultiplexer.h
+           src/TimeInterleaver.cpp
+           src/TimeInterleaver.h
+Copyright: 2003-2012 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2022 Matthias P. Braendli, http://opendigitalradio.org
+License:   GPL-3.0+
+
+Files:     doc/fir-filter/generate-filter.py
+           doc/time-freq-plot.py
+           lib/zmq.hpp
+           python/dpd/Dab_Util.py
+           python/dpd/ExtractStatistic.py
+           python/dpd/GlobalConfig.py
+           python/dpd/Heuristics.py
+           python/dpd/MER.py
+           python/dpd/Measure_Shoulders.py
+           python/dpd/Model.py
+           python/dpd/RX_Agc.py
+           python/dpd/TX_Agc.py
+           python/dpd/old/apply_adapt_dumps.py
+           python/dpd/old/iq_file_server.py
+           python/dpd/old/main.py
+           python/dpd/phase_align.py
+           python/dpd/subsample_align.py
+           python/dpdce.py
+Copyright: 250-2011 bpm s.r.o.
+           2007-2009 iMatix Corporation
+           2011 Botond Ballo
+           2013 Matthias P. Braendli http://mpb.li
+           2016-2017 ZeroMQ community
+           2017 Andreas Steger
+           2017-2019 Matthias P. Braendli
+License:   Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ IN THE SOFTWARE.
+
+Files:     python/gui.py
+           python/gui/api.py
+           python/gui/dpd/Align.py
+           python/gui/dpd/Capture.py
+           python/gui/dpd/__init__.py
+           python/gui/static/js/odr-home.js
+           python/gui/static/js/odr-modulator.js
+           python/gui/static/js/odr-predistortion.js
+           python/gui/static/js/odr-rcvalues.js
+           python/gui/static/js/odr.js
+           python/lib/yamlrpc.py
+           python/lib/zmqrc.py
+           src/InputReader.h
+           src/InputTcpReader.cpp
+Copyright: 2005-2012 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2017 Andreas Steger
+           2018 Matthias P. Braendli
+           2018-2019 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     lib/edi/ETIDecoder.cpp
+           lib/edi/ETIDecoder.hpp
+           lib/edi/buffer_unpack.hpp
+           lib/edi/common.cpp
+           lib/edi/common.hpp
+           lib/edi/eti.cpp
+           lib/edi/eti.hpp
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2016-2020 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-2.0+
+ http://opendigitalradio.org
+ .
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+Files:     lib/fec/char.h
+           lib/fec/decode_rs_char.c
+           lib/fec/encode_rs_char.c
+           lib/fec/fec.h
+           lib/fec/init_rs.h
+           lib/fec/init_rs_char.c
+           python/dpd/old/store_received.py
+Copyright: 2002-2004 Phil Karn, KA9Q May be used under the terms of the GNU Lesser General Public License (LGPL)
+           2017 Matthias P. Braendli http://www.opendigitalradio.org 
+License:   LGPL-3
+
+Files: m4/ax_cxx_compile_stdcxx.m4
+Copyright: 2008, Benjamin Kosnik <bkoz@redhat.com>
+  2012, Zack Weinberg <zackw@panix.com>
+  2013, Roy Stogner <roystgnr@ices.utexas.edu>
+  2014-2015, Google Inc.; contributed by Alexey Sokolov <sokolov@google.com>
+  2015, Moritz Klammler <moritz@klammler.eu>
+  2015, Paul Norman <penorman@mac.com>
+  2016, 2018, Krzesimir Nowak <qdlacz@gmail.com>
+  2019, Enji Cooper <yaneurabeya@gmail.com>
+License: FSFAP
+
+Files: m4/ax_check_compile_flag.m4
+Copyright: 2008, Guido U. Draheim <guidod@gmx.de>
+  2011, Maarten Bosmans <mkbosmans@gmail.com>
+License: FSFAP
+
+Files: m4/ax_boost_thread.m4
+Copyright: 2009, Michael Tindal
+  2009, Thomas Porschberg <thomas@randspringer.de>
+License: FSFAP
+
+Files: m4/ax_boost_base.m4
+Copyright: 2008, Thomas Porschberg <thomas@randspringer.de>
+  2009, Peter Adolphs
+License: FSFAP
+
+Files: m4/pkg.m4
+Copyright: 2004, Scott James Remnant <scott@netsplit.com>.
+License: GPL-2+ with Autoconf-data exception
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+ MA 02110-1301, USA.
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+
+Files:     lib/RemoteControl.cpp
+           lib/Socket.cpp
+           lib/Socket.h
+Copyright: 2003-2012 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2019-2020 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/output/Feedback.cpp
+           src/output/Feedback.h
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2017 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     lib/Log.cpp
+           lib/Log.h
+Copyright: 2005-2012 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2018 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/output/Lime.cpp
+           src/output/Lime.h
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2018 Evariste F5OEO, evaristec@gmail.com
+           2019 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/FormatConverter.cpp
+           src/FormatConverter.h
+Copyright: 2005-2011 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2017 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/output/SDR.h
+           src/output/SDRDevice.h
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2018-2019 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     lib/crc.c
+           lib/crc.h
+Copyright: 2003-2009 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+License:   GPL-3.0+
+
+Files:     src/output/Soapy.cpp
+           src/output/Soapy.h
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2019 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     lib/edi/PFT.cpp
+           lib/edi/PFT.hpp
+Copyright: 2017 AVT GmbH - Fabien Vercasson
+           2021 Matthias P. Braendli matthias.braendli@mpb.li
+License:   Apache-2.0
+ http://opendigitalradio.org
+ .
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+ express or implied.
+ See the License for the specific language governing permissions
+ and limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     doc/zmq-ctrl/cpp/OdrModCtrl.hpp
+Copyright: 2015 Jörgen Scott (jorgen.scott@paneda.se)
+License:   GPL-3.0+
+
+Files:     lib/RemoteControl.h
+Copyright: 2007-2012 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2019 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/TII.h
+Copyright: 2005-2011 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2018 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/InputFileReader.cpp
+Copyright: 2005-2012 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+License:   GPL-3.0+
+
+Files:     src/output/UHD.h
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2019 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     doc/zmq-ctrl/cpp/OdrModCtrl.cpp
+Copyright: 2015 Jörgen Scott (jorgen.scott@paneda.se)
+License:   GPL-3.0+
+
+Files:     lib/Globals.cpp
+Copyright: 2005-2012 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2019 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/output/BladeRF.h
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2019 Matthias P. Braendli, matthias.braendli@mpb.li
+           2021 Steven Rossel, steven.rossel@bluewin.ch
+License:   GPL-3.0+
+
+Files:     lib/ThreadsafeQueue.h
+Copyright: 2007-2011 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2018 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/FIRFilter.cpp
+Copyright: 2007-2011 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2017 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/output/USRPTime.h
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2018 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     src/Eti.h
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+License:   GPL-3.0+
+
+Files:     src/MemlessPoly.cpp
+Copyright: 2007-2011 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2018 Matthias P. Braendli, matthias.braendli@mpb.li Andreas Steger, andreas.steger@digris.ch
+License:   GPL-3.0+
+
+Files:     doc/zmq-ctrl/cpp/test/ctrl_test.cpp
+Copyright: 2015 Jörgen Scott (jorgen.scott@paneda.se)
+License:   GPL-3.0+
+
+Files:     src/output/USRPTime.cpp
+Copyright: 2005-2010 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2018 Matthias P. Braendli, matthias.braendli@mpb.li
+License:   GPL-3.0+
+
+Files:     LICENCE
+Copyright: 2005-2012 Her Majesty the Queen in Right of Canada (Communications Research Center Canada)
+           2013-2014 Matthias P. Braendli, http://mpb.li
+License:   GPL-3.0+
+
+Files:     lib/fec/rs-common.h
+Copyright: 2004 Phil Karn, KA9Q May be used under the terms of the GNU Lesser General Public License (LGPL)
+License:   LGPL-3
+
+Files:     python/gui/static/js/jquery.gritter.js
+Copyright: 2011 Jordan Boesch Dual licensed under the MIT and GPL licenses.
+License:   EXPAT
+
+Files:     python/gui/static/js/jquery.js
+Copyright: 2005-2014 jQuery Foundation, Inc. and other contributors Released under the MIT license http://jquery.org/license
+License:   EXPAT
+
+Files:     python/gui/static/js/bootstrap.min.js
+Copyright: 2011-2015 Twitter, Inc.
+License:   EXPAT
+
+Files:     python/gui/static/css/bootstrap.min.css
+Copyright: 2011-2015 Twitter, Inc.
+License:   EXPAT
+
+Files:     lib/INIReader.h
+Copyright: 2009 Ben Hoyt
+License:   BSD-3-Clause
+ Copyright (c) 2009 Ben Hoyt 
+ .
+ Redistribution and use in source and binary forms, with or without 
+ modification, are permitted provided that the following conditions 
+ are met:
+ .
+    1. Redistributions of source code must retain the above copyright 
+       notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright 
+       notice, this list of conditions and the following disclaimer in 
+       the documentation and/or other materials provided with the 
+       distribution.
+    3. Neither the name of the copyright holder nor the names of its 
+       contributors may be used to endorse or promote products derived 
+       from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files:     m4/ax_pthread.m4
+Copyright: 2008 Steven G. Johnson <stevenj@alum.mit.edu>
+           2011 Daniel Richard G. <skunk@iSKUNK.ORG>
+           2019 Marc Stevens <marc.stevens@cwi.nl>
+License:   GPL-3.0+ with autoconf exception
+ This program is free software: you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation, either version 3 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+ Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program. If not, see <https://www.gnu.org/licenses/>.
+ .
+ As a special exception, the respective Autoconf Macro's copyright owner
+ gives unlimited permission to copy, distribute and modify the configure
+ scripts that are the output of Autoconf when processing the Macro. You
+ need not follow the terms of the GNU General Public License when using
+ or distributing such scripts, even though portions of the text of the
+ Macro appear in them. The GNU General Public License (GPL) does govern
+ all other use of the material that constitutes the Autoconf Macro.
+ .
+ This special exception to the GPL applies to versions of the Autoconf
+ Macro released by the Autoconf Archive. When you make and distribute a
+ modified version of the Autoconf Macro, you may extend this special
+ exception to the GPL to apply to your modified version as well.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+
+License:   GPL-3.0+
+ This file is part of ODR-DabMod. ODR-DabMod is a fork of CRC-DabMod,
+ which was developed by the Communications Research Center Canada.
+ .
+ ODR-DabMod is free software: you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation, either version 3 of the License, or (at your
+ option) any later version.
+ .
+ ODR-DabMod is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with ODR-DabMod.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+
+License: EXPAT
+ Permission is hereby granted, free of charge, to any person obtaining 
+ a copy of this software and associated documentation files (the "Software"), 
+ to deal in the Software without restriction, including without limitation 
+ the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ and/or sell copies of the Software, and to permit persons to whom the 
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included 
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+ THE SOFTWARE. 
+
+License: LGPL-3
+ On Debian systems, the full text of the GNU Lesser General Public License
+ version 3 can be found in the file `/usr/share/common-licenses/LGPL-3'.
+
+License: FSFAP
+ Copying and distribution of this file, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved.  This file is offered as-is,
+ without any warranty.
