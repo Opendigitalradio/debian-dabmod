@@ -1,0 +1,88 @@
+language: cpp
+dist: focal
+
+jobs:
+  include:
+    # Clang on OSX
+    - env: MATRIX_EVAL="" CONF="--disable-output-uhd"
+      os: osx
+      osx_image: xcode12.2
+      compiler: clang
+
+    - env: MATRIX_EVAL="" CONF=""
+      os: osx
+      osx_image: xcode12.2
+      compiler: clang
+
+    # GCC builds on Linux
+    - env: MATRIX_EVAL="CC=gcc-10 CXX=g++-10" CONF="--disable-zeromq --disable-output-uhd"
+      os: linux
+      arch: amd64
+      compiler: gcc
+      addons: &linuxaddons
+        apt:
+          packages: &packages
+            - libzmq3-dev
+            - libzmq5
+            - automake
+            - libtool
+            - libcurl4-openssl-dev
+            - libfftw3-dev
+            # libuhd-dev is not allowed
+            - g++-10
+
+    - env: MATRIX_EVAL="CC=gcc-10 CXX=g++-10" CONF="--disable-output-uhd --enable-output-raw"
+      os: linux
+      arch: amd64
+      compiler: gcc
+      addons: *linuxaddons
+
+    - env: MATRIX_EVAL="CC=gcc-10 CXX=g++-10" CONF="--disable-output-uhd --disable-native"
+      os: linux
+      arch: amd64
+      compiler: gcc
+      addons: *linuxaddons
+
+    - env: MATRIX_EVAL="CC=gcc-10 CXX=g++-10" CONF="--disable-output-uhd --enable-trace"
+      os: linux
+      arch: amd64
+      compiler: gcc
+      addons: *linuxaddons
+
+    # ARM64 builds
+    - env: MATRIX_EVAL="CC=gcc-10 CXX=g++-10" CONF="--disable-output-uhd"
+      os: linux
+      arch: arm64
+      compiler: gcc
+      addons: *linuxaddons
+
+    - env: MATRIX_EVAL="CC=gcc-10 CXX=g++-10" CONF="--disable-output-uhd --disable-native"
+      os: linux
+      arch: arm64
+      compiler: gcc
+      addons: *linuxaddons
+
+    # For EasyDAB, which should be an armhf build instead
+    - env: MATRIX_EVAL="CC=gcc-10 CXX=g++-10" CONF="--enable-easydabv3 --disable-output-uhd --enable-fast-math --disable-native"
+      os: linux
+      arch: amd64
+      compiler: gcc
+      addons: *linuxaddons
+
+before_install:
+  - eval "${MATRIX_EVAL}"
+  - |
+    if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+    brew update
+    brew install automake || true
+    brew install zeromq || true
+    brew install fftw || true
+    brew install uhd || true
+    fi
+
+script:
+  - |
+    ./bootstrap.sh
+    ./configure $CONF
+    make
+
